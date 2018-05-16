@@ -1,5 +1,5 @@
 read -p "Are you sure to apply the new github code (Y/N) ?" response
-if [[ $response -eq "Y" ]]; then
+if [ $response == "Y" ]; then
 
  fly -t local destroy-pipeline -p install-nsx-t -n
 
